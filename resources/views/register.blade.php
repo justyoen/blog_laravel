@@ -5,12 +5,12 @@
         <h1>Buat Account Baru!</h1>
         <h3>Sign Up Form</h3>
         <!-- Membuat Form-->
-        <form action="welcome.html">
+        <form action="{{ route('/welcome') }}" method="get">
             <label for="first_name">First Name:</label><br><br>
-            <input type="text" id="first_name"><br><br>
+            <input type="text" id="first_name" name="first_name"><br><br>
 
             <label for="last_name">Last Name:</label><br><br>
-            <input type="text" id="last_name"><br><br>
+            <input type="text" id="last_name" name="last_name"><br><br>
 
             <label>Gender:</label><br><br>
             <input type="radio" name="gender" value="0"> Male<br>
