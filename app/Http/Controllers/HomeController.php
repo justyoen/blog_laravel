@@ -8,7 +8,7 @@ use App\User;
 class HomeController extends Controller
 {
 
-    public function Home()
+    public function home()
     {
         return view('home');
     }

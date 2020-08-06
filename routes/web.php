@@ -11,18 +11,14 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
 
-// Route::get('/welcome', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/register', function () {
-//     return view('form');
-// });
-
-Route::get('/', 'HomeController@home');
+Route::get('/home', 'HomeController@home');
 Route::get('/register', 'AuthController@register');
 Route::get('/welcome', 'AuthController@welcome');
+Route::get('/dashboard', 'AdminController@dashboard');
+Route::get('/', function () {
+    return view('table');
+});
+Route::get('/data_table', function () {
+    return view('data_table');
+});

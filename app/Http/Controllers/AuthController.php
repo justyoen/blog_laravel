@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     //
-    public function Register()
+    public function register()
     {
         return view('/register');
     }
 
-    public function Welcome(Request $request)
+    public function welcome(Request $request)
     {
         $first_name = $request->input('first_name');
         $last_name = $request->input('last_name');
